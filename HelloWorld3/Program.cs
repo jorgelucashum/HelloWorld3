@@ -20,12 +20,13 @@ namespace HelloWorld3
             Console.WriteLine("digite o valor e o nome do produto: ");
             GerarPreco(int.Parse(Console.ReadLine()), Console.ReadLine());
 
-
-            int soma1 = Somar(1, 2, 3);
+            Console.WriteLine("Digite 3 valores para soma-los");
+            int n1 = int.Parse(Console.ReadLine()), n2 = int.Parse(Console.ReadLine()), n3 = int.Parse(Console.ReadLine());
+            int soma1 = Somar(n1, n2, n3);
             int soma2 = Somar(10, 20, 30);
             int soma3 = Somar(100, 200, 300);
 
-            Console.WriteLine(soma1);
+            Console.WriteLine("Resultado = " + soma1);
             Console.WriteLine(soma2);
             Console.WriteLine(soma3);
 
@@ -57,7 +58,7 @@ namespace HelloWorld3
             int precoAbs = Math.Abs(preco); //Abs converte o numero para modulo (sem sinal, sempre positivo)
             float valorFinal = precoAbs * 2;
             Console.WriteLine("Produto: " + nome);
-            Console.WriteLine("O preço final é: " + valorFinal);
+            Console.WriteLine("O preço final é: " + valorFinal + "\n");
             
         }
 
